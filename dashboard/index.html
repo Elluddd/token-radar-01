@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="dot" aria-hidden="true"></span> TOKEN RADAR</div>
+  <div class="topmeta"><span id="snapline">Snapshot loading…</span><span class="badge">model radar-2</span></div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <a href="#/" id="tab-board">Board</a>
+  <a href="#/live" id="tab-live">Live tokens</a>
+  <a href="#/method" id="tab-method">How it ranks</a>
+</nav>
+<main id="app" aria-busy="true"></main>
+<footer class="foot">
+  <p>Implied value is this entry's own claim from the sealed snapshot, never a promise that a
+  token launches or what it will be worth. A protocol "records no token" when DefiLlama's record
+  carries none for it — that is not proof it has none.</p>
+  <p id="footline"></p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
