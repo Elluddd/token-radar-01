@@ -15,6 +15,10 @@
 //
 // The run is deterministic: every number comes from the sealed snapshot, nothing reads
 // the clock, the network or unseeded randomness, so two runs write identical bytes.
+//
+// Sealed snapshot identity (kit/input/snapshot.json): DefiLlama protocols fetched
+// 2026-11-14T01:18:33Z, as-of 2026-11-14,
+// sha256 42a71213519479f3a180cc5010cbbf6bd18a2447fa0ad29e4c5122b6c9184393.
 
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
